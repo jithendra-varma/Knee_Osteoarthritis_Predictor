@@ -1,0 +1,5 @@
+A Novel Method to Predict Knee Osteoarthritis using Deep Learning
+
+Algorithm / Model Used: VGG16 model
+
+Accuracy score: 0.9503

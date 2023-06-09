@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="shortcut icon" href="../static/images/Knee_favicon.png" type="">
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css" />
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- font awesome style -->
+  <link href="../static/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="../static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="../static/css/responsive.css" rel="stylesheet" />
+
+  <title>  Knee Osteoarthritis Detector V1 </title>
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <img src="../static/images/knee_performance.jpg" alt="">
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="{{url_for('first')}}">
+            <span>
+              Knee Osteoarthritis Detector V1 
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="{{url_for('first')}}">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{url_for('login')}}"> Login</a>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="{{url_for('index')}}"> Upload</a>
+              </li>
+             <li class="nav-item">
+                <a class="nav-link" href="{{url_for('performance')}}"> Algo_Performance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{url_for('chart')}}"> Algo_Chart</a>
+              </li> 
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      Performance of Deep learning model in Knee Osteoarthritis prediction
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+
+  </div>
+
+
+  <!-- department section -->
+
+  <section class="department_section layout_padding">
+    <div class="department_container">
+      <div class="container ">
+        <div class="heading_container heading_center">
+          <div class="heading-section ftco-animate mb-5">
+            <center>	<span class="subheading"> </span></center>
+            <center> <h1 class="mb-4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALGORITHM PERFORMANCE</h1></center>
+            <header>
+              <div class="section-title">
+                <center>
+                  </br>
+                  </br>
+                  <div>
+                    <span style="margin-left:50px;color:black"><font size="12">Accuracy:</font>
+                    <span style="margin-left:80px;color:black"><font size="12">0.950</font>
+                  </div> 
+                  </br>
+                  </br>
+                  <div>
+                    <span style="margin-left:50px;color:black"><font size="12">Precision:</font>
+                    <span style="margin-left:80px;color:black"><font size="12">0.934  </font>
+                  </div>
+                  </br>
+                  </br>    
+                  <div>
+                    <span style="margin-left:50px;color:black"><font size="12">Recall:   </font>
+                    <span style="margin-left:140px;color:black"><font size="12">0.950</font>
+                  </div>
+                  </br>
+                  </br>
+                  <div>
+                    <span style="margin-left:50px;color:black"><font size="12">F-Measure:   </font>
+                    <span style="margin-left:40px;color:black"><font size="12">0.950</font>
+                  </div>
+                  </br>
+                  </br>
+                  </br>
+                  </br>
+                  </br>
+                  </br>
+                  </br>
+                </center>
+                <div class="col-lg-8 mx-auto">
+                  <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                  <div>
+                    <span style="margin-left:20px;color:red"><font size="12">Confusion Matrix</font>
+                  </div>
+					        </br>
+					        </br>
+                  <center>
+                    <div>
+                      <img style="margin-left:-150px;width:800px;height:500px;" src="../static/download.png">
+                    </div>
+                  </center>
+                </div>
+              </div>
+            </header>
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end department section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <h4 style="text-align:center;">
+      Made with ♥ by Jithu
+    </h4>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="../static/js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="../static/js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="../static/js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>

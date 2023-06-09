@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="shortcut icon" href="../static/images/Knee_favicon.png">
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css" />
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- font awesome style -->
+  <link href="../static/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="../static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="../static/css/responsive.css" rel="stylesheet" />
+
+  <title>  Knee Osteoarthritis Detector V1  </title>
+
+  <script>
+    function previewImage() {
+        var file = document.getElementById("imagefile").files;
+        if (file.length > 0) {
+            var fileReader = new FileReader();
+ 
+            fileReader.onload = function (event) {
+                document.getElementById("preview").setAttribute("src", event.target.result);
+            };
+ 
+            fileReader.readAsDataURL(file[0]);
+        }
+    }
+  </script>
+
+</head>
+
+<body>
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <img src="../static/images/knee_index.jpg" alt="">
+    </div>
+
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="{{url_for('first')}}">
+            <span>
+              Knee Osteoarthritis Detector V1
+            </span>
+          </a>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="{{url_for('first')}}">Home<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{url_for('login')}}">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{url_for('index')}}">Upload</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      Check you knee health with X-Ray
+                    </h1> 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+
+  <!-- department section -->
+
+  <section class="department_section layout_padding">
+    <div class="department_container">
+      <div class="container">
+        <div class="heading_container heading_center">
+          <h2>
+            Upload the Knee X-Ray
+          </h2>
+        </div>
+        </br>
+        </br>
+	      <div class="heading-section ftco-animate mb-5">
+		      <center>
+            <span class="subheading">  </span>
+          </center>
+		      <center> 
+            <h2 class="mb-4">Predict Knee Osteoarthritis </h2>
+          </center>
+          <center>
+            <div class="limiter">
+              <div class="container-login100" style="background-image: url(images/background1.jpg); background-size: fill;">
+                <div class="wrap-login100">
+                  <div class="login100-form-title" style=" background-image: url(images/background2.jpg);">
+                    <div style="background-color: #b1d3d7; margin-left: 25%; margin-right: 25%; font-size: 1.5em;">
+                      <br>
+                      <span class="login100-form-title-1">
+                        Upload Image:
+                      </span>
+                      <br>
+                      </br>
+                      <form class="login100-form validate-form" action="/upload" method="POST" enctype="multipart/form-data">
+                        <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+                          <br>
+                          <input class="input100" type="file" name="imagefile" id="imagefile" class="btn" accept="image/*" onchange="previewImage();" required>
+                        </div>
+                        <img id="preview">
+                        <div class="container-login100-form-btn">
+                          </br>
+                          </br>
+                          <button class="login100-form-btn" type="submit"> Predict </button>
+                        </div>
+                      </form>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </center>
+        </div>
+      </div>
+    </div>
+  </section>
+							
+  <!-- end department section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <h4 style="text-align:center;">
+      Made with ♥ by Jithu
+    </h4>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script type="text/javascript" src="../static/js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="../static/js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="../static/js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+</body>
+</html>

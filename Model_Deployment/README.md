@@ -28,7 +28,7 @@ To use the interactive tool for knee osteoarthritis prediction, follow these ste
    pip install -r requirements.txt
    ```
 
-5. Make sure the trained model file (`knee.h5`) is present in the `model` directory.
+5. Make sure the trained model file (`knee.h5`) is present in the main directory.
 
 6. Start the web application by running the following command:
    ```

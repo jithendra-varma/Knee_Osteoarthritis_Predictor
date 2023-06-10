@@ -41,9 +41,7 @@ To deploy the knee osteoarthritis predictor as an interactive web tool, refer to
 
 ## Additional Resources
 
-For more details on the project, including model training and evaluation, refer to the [main repository](https://
-
-github.com/jithendra-varma/Knee_Osteoarthritis_Predictor).
+For more details on the project, including model training and evaluation, refer to the [main repository](https://github.com/jithendra-varma/Knee_Osteoarthritis_Predictor)
 
 Feel free to explore and experiment with the code to enhance the knee osteoarthritis predictor!
 

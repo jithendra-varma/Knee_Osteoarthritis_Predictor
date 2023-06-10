@@ -1,3 +1,4 @@
+
 # Knee Osteoarthritis Predictor
 
 This repository contains the code for training a knee osteoarthritis predictor using a Convolutional Neural Network (CNN) model. The model is trained on a dataset of knee images to classify the severity of osteoarthritis into five categories: Normal, Doubtful, Mild, Moderate, and Severe.
@@ -34,19 +35,15 @@ The model training is performed using the `Model_Training.ipynb` notebook. The n
 
 11. Plot Training Loss and Accuracy: Finally, the training loss and accuracy curves are plotted using the history object obtained during training.
 
-## Usage
+## Model Deployment
 
-To use this code for knee osteoarthritis prediction:
+To deploy the knee osteoarthritis predictor as an interactive web tool, refer to the `Model_Deployment` directory in this repository. The web application is developed using the Flask framework in Python and allows users to upload knee images and receive predictions regarding the severity of osteoarthritis. For more details on the model deployment, refer to the [Model_Deployment](https://github.com/jithendra-varma/Knee_Osteoarthritis_Predictor/tree/main/Model_Deployment) directory.
 
-1. Clone the repository to your local machine or open the notebook on Google Colab.
+## Additional Resources
 
-2. Make sure you have the required dependencies installed (refer to the notebook).
+For more details on the project, including model training and evaluation, refer to the [main repository](https://
 
-3. Set up the data directory structure as specified in the notebook.
-
-4. Run the notebook cells sequentially to train the model, evaluate performance, and test on new images.
-
-5. Modify the code as needed to suit your specific requirements.
+github.com/jithendra-varma/Knee_Osteoarthritis_Predictor).
 
 Feel free to explore and experiment with the code to enhance the knee osteoarthritis predictor!
 

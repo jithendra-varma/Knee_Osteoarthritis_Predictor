@@ -1,9 +1,5 @@
 # Knee Osteoarthritis Predictor
 
-![Project Image](./project-image.png)
-
-## Overview
-
 Knee Osteoarthritis Predictor is a deep learning-based project that aims to predict knee osteoarthritis using the Kellgren-Lawrence system of classification. The project consists of two main components: model training and model deployment. The model training phase involves training a VGG-16 convolutional neural network (CNN) model on a dataset of knee X-ray images. The trained model is then deployed in a web application, allowing users to upload their knee X-ray images and obtain predictions regarding the severity of osteoarthritis.
 
 ## Repository Structure
